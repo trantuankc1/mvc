@@ -1,4 +1,5 @@
 <?php
 require_once('mvc/bridge.php');
-$app = new app;
+$app = new app();
+
 ?>

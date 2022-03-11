@@ -1,14 +1,9 @@
 <?php
-require_once ('./mvc/core/app.php');
-class home {
-     public function index () {
-          echo 'index php';
-     }
+require_once('mvc/core/controller.php');
+class home extends controller {
+     
      public function home () {
-          echo 'index home';
-     }
-     public function news () {
-          echo 'trang news';
+          $this -> view('public/home');
      }
     
 }
