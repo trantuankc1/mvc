@@ -1,1 +1,0 @@
-trang view home

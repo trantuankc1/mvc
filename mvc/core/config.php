@@ -1,9 +1,9 @@
 <?php
 class Database {
-     private $host = 'localhost';
-     private $user = 'root';
-     private $password = '';
-     private $database = 'oop.local';
+     protected $host = 'localhost';
+     protected $user = 'root';
+     protected $password = '';
+     protected $database = 'oop.local';
 
      protected $con = null;
      public function __construct(){
@@ -19,14 +19,7 @@ class Database {
      public function excute_query($query) {
        return mysqli_query($this -> con, $query);
      }
-     public function getdata($query) {
-          $data = [];
-          $result = $this -> excute_query($query);
-          while($row =  mysqli_fetch_array($result)){
-               $data[] = $row;
-          }
-          return $data;
-     }
+   
 
      
 }
