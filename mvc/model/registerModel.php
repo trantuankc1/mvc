@@ -1,7 +1,10 @@
 <?php
+require_once('config.php');
 class RegisterModel extends Database {
-     var $name;
-    
+     public $name;
+     public $password;     
+
+   
     
 }
 ?>

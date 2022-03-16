@@ -6,7 +6,7 @@ class app {
      protected $params = array(); // tham số
 
      public function __construct () {
-      $url = $this -> UrlProcess();
+     $url = $this -> UrlProcess();
       // process controller
       if(isset($url[0]) && file_exists('mvc/controller/'.$url[0].'.php')){
           $this -> controller = $url[0];
