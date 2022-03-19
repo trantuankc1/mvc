@@ -1,5 +1,6 @@
 <?php
 require_once('./mvc/controller/home.php');
+
 class app {
      protected $controller = 'home'; // điều hướng
      protected $action = 'home';  // hàm được chạy
